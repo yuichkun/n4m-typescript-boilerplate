@@ -39,12 +39,104 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 788.0, 58.0, 281.0, 47.0 ],
+					"text" : "3. example-b\n\nYour awesome friend says whatever you tell'im to!"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 793.0, 278.0, 153.0, 60.0 ],
+					"text" : "3. example-a\n\nLists files/folders in the project folder."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 495.0, 190.0, 153.0, 20.0 ],
+					"text" : "1. install npm packages"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 436.0, 149.0, 79.0, 20.0 ],
+					"text" : "2. start/stop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.0, 218.0, 193.0, 100.0 ],
+					"text" : "Here you can choose which mode to use.\n1. ts-node\n2. transpiled js\n\nFor more information about modes, read README.md."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 443.0, 392.0, 150.0, 20.0 ],
+					"text" : "Debug:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.0, 392.0, 150.0, 20.0 ],
+					"text" : "Log View:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 286.0, 177.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 331.079136690647488, 29.5, 22.0 ],
+					"patching_rect" : [ 90.0, 463.079136690647488, 29.5, 22.0 ],
 					"text" : "set"
 				}
 
@@ -56,7 +148,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 285.0, 42.0, 22.0 ],
+					"patching_rect" : [ 90.0, 417.0, 42.0, 22.0 ],
 					"text" : "r clear"
 				}
 
@@ -68,7 +160,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 373.381294964028768, 321.0, 22.0 ]
+					"patching_rect" : [ 90.0, 505.381294964028768, 321.0, 22.0 ]
 				}
 
 			}
@@ -90,7 +182,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 754.0, 79.0, 652.0, 787.0 ],
+						"rect" : [ 34.0, 79.0, 1372.0, 787.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -117,6 +209,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-16",
@@ -455,6 +548,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"watch" : 0
 									}
 ,
@@ -473,6 +568,8 @@
 									"saved_object_attributes" : 									{
 										"autostart" : 0,
 										"defer" : 0,
+										"node_bin_path" : "",
+										"npm_bin_path" : "",
 										"options" : [ "-r", "ts-node/register" ],
 										"watch" : 0
 									}
@@ -718,7 +815,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 666.0, 112.0, 268.0, 68.0 ],
+					"patching_rect" : [ 788.0, 110.0, 268.0, 68.0 ],
 					"text" : "Type something here!"
 				}
 
@@ -730,7 +827,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 666.0, 190.0, 59.0, 22.0 ],
+					"patching_rect" : [ 788.0, 188.0, 59.0, 22.0 ],
 					"text" : "route text"
 				}
 
@@ -742,7 +839,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 666.0, 218.0, 75.0, 22.0 ],
+					"patching_rect" : [ 788.0, 216.0, 75.0, 22.0 ],
 					"text" : "prepend say"
 				}
 
@@ -943,7 +1040,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 600.0, 218.0, 49.0, 22.0 ],
+					"patching_rect" : [ 793.0, 346.0, 49.0, 22.0 ],
 					"text" : "list-files"
 				}
 
@@ -975,13 +1072,20 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 565.0, 373.381294964028768, 400.0, 220.0 ],
+					"patching_rect" : [ 436.0, 417.0, 400.0, 220.0 ],
 					"viewvisibility" : 1
 				}
 
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
 					"midpoints" : [ 445.5, 274.429992500000026, 445.5, 274.429992500000026 ],
@@ -1006,7 +1110,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
-					"midpoints" : [ 675.5, 274.429992500000026, 445.5, 274.429992500000026 ],
+					"midpoints" : [ 797.5, 274.429992500000026, 445.5, 274.429992500000026 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -1028,7 +1132,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-83", 1 ],
-					"midpoints" : [ 609.5, 274.429992500000026, 445.5, 274.429992500000026 ],
+					"midpoints" : [ 802.5, 378.0, 624.0, 378.0, 624.0, 298.859984999999995, 445.5, 298.859984999999995 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -1059,7 +1163,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"midpoints" : [ 445.5, 352.120639982014382, 574.5, 352.120639982014382 ],
+					"midpoints" : [ 445.5, 352.120639982014382, 445.5, 352.120639982014382 ],
 					"source" : [ "obj-83", 1 ]
 				}
 
