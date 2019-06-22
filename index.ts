@@ -9,7 +9,7 @@ enum actionTypes {
 }
 
 MaxAPI.addHandler(actionTypes.LIST_FILES, () => {
-  fs.readdir(__dirname, (err, files) => {
+  fs.readdir(process.cwd(), (err, files) => {
     if (err) {
       MaxAPI.post(err.message, "error")
     }
